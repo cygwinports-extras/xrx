@@ -1,0 +1,4 @@
+category: X11
+requires: cygwin libICE6 libX11_6 libXaw8 libXext6 libXt6
+sdesc: "Xorg RX document helper app and plugins"
+ldesc: "Xorg RX document helper app and plugins"
