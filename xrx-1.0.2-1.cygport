@@ -1,0 +1,5 @@
+inherit xorg
+
+PATCH_URI="1.0.2-no-undefined.patch"
+
+CYGCONF_ARGS="--libdir=/usr/lib/mozilla/plugins --disable-static"
