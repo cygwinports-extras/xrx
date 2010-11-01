@@ -1,0 +1,19 @@
+--- origsrc/xrx-1.0.4/plugin/Makefile.am	2010-10-30 20:01:18.000000000 -0500
++++ src/xrx-1.0.4/plugin/Makefile.am	2010-10-31 21:41:11.572879200 -0500
+@@ -36,7 +36,7 @@ AM_CFLAGS = -DXP_UNIX $(CWARNFLAGS) \
+     $(XRX_CFLAGS) $(XRX_PLUGIN_CFLAGS) $(PLUGIN_CFLAGS)
+ 
+ libxrx_la_LIBADD = $(XRX_LIBS) $(XRX_PLUGIN_LIBS)
+-libxrx_la_LDFLAGS = -avoid-version -module
++libxrx_la_LDFLAGS = -avoid-version -module -no-undefined
+ 
+ PARAMS_SRCS = $(RXSRC)/PRead.c $(RXSRC)/PParse.c $(RXSRC)/BuildReq.c
+ XMISC_SRCS = $(RXSRC)/XUrls.c $(RXSRC)/XAuth.c $(RXSRC)/XDpyName.c \
+--- origsrc/xrx-1.0.4/xnest-plugin/Makefile.am	2010-10-30 20:02:24.000000000 -0500
++++ src/xrx-1.0.4/xnest-plugin/Makefile.am	2010-10-31 21:41:21.307296200 -0500
+@@ -49,4 +49,4 @@ libxrxnest_la_SOURCES = \
+ AM_CFLAGS = $(CWARNFLAGS) $(XRX_CFLAGS) $(XRX_PLUGIN_CFLAGS) $(PLUGIN_CFLAGS)
+ 
+ libxrxnest_la_LIBADD = $(XRX_LIBS) $(XRX_PLUGIN_LIBS)
+-libxrxnest_la_LDFLAGS = -avoid-version -module
++libxrxnest_la_LDFLAGS = -avoid-version -module -no-undefined
