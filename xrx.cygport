@@ -1,0 +1,13 @@
+inherit xorg
+
+NAME="xrx"
+VERSION=1.0.4
+RELEASE=1
+CATEGORY="X11 Web"
+SUMMARY="RX document helper app and plugins"
+DESCRIPTION="XRX may be used with any Web browser to interpret documents in
+the RX MIME type format and start remote applications."
+
+PATCH_URI="1.0.4-no-undefined.patch"
+
+CYGCONF_ARGS="--libdir=/usr/lib/mozilla/plugins"

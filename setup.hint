@@ -1,4 +1,0 @@
-category: X11 Web
-requires: libICE6 libX11_6 libXaw7 libXext6 libXt6
-sdesc: "X.Org RX document helper app and plugins"
-ldesc: "X.Org RX document helper app and plugins"
